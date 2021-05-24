@@ -1,0 +1,46 @@
+.button {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
+    font-family: 'roboto', sans-serif;
+    border-radius: 4px;
+    min-width: 200px;
+    min-height: 50px;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}
+
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: var(--primary-bg-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+
+  
+  &::before {
+    content: '';
+    width: 11px;
+    height: 11px;
+    background-image: url(../images/svg/Vector.svg);
+  }
+}  
