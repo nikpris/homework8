@@ -1,12 +1,22 @@
 .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
   }
   
 .filters {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 30px;
+    }
   }
   
   .filters__button {
